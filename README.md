@@ -22,7 +22,7 @@ A collection of powerful utilities to supercharge your Termux workflow.
 apt update -y && apt upgrade -y
 apt install curl wget tar coreutils -y
 
-curl -sL https://raw.githubusercontent.com/tanazd1-octo/termux-miscallious/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/tanazd1/termux-miscellaneous/main/install.sh | bash
 
 ---
 
@@ -53,7 +53,7 @@ This toolkit adds speed, flexibility, and better workflows.
 
 Always review install scripts before running:
 
-curl -sL <url>
+curl -s
 
 ---
 
