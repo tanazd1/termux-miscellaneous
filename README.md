@@ -1,4 +1,4 @@
-![Demo of C shell and x working](demo.png)
+![Demo of C shell and x working](Demo.png)
 
 
 
