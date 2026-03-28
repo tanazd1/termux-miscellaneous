@@ -20,7 +20,7 @@ A collection of powerful utilities to supercharge your Termux Application!!!
 - "tc" → Parallel job runner
 - "tct" → Test "tc"
 - "x" → Universal archive extractor
-
+- "lock" - Lock your terminal
 ---
 
 📦 Installation
