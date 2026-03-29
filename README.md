@@ -75,4 +75,4 @@ If you like this project:
 - Fork 🍴 it  
 - Suggest features / improvements
 
-
+Any FAQ? Click ![here](FAQ.md)
