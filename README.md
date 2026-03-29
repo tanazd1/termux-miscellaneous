@@ -23,7 +23,12 @@ A collection of powerful utilities to supercharge your Termux Application!!!
 - `"x"` → Universal archive extractor  
 - `"lock"` → Lock your terminal  
 - `"exe!"` → Run scripts even from internal storage  
-- `"r"` → Run hex codes  
+- `"r"` → Run hex codes
+- `"uname"` - Fake uname script to fake as Linux Kernel 6.1.1 x86_64 Ubuntu OS
+
+
+CAUTION: ```uname``` SHOULDNT BE REPLACED AS THE SYSTEM `uname`.
+READ MORE  [here](.hidden/.secrets/x1/README.md)
 
 ---
 
@@ -70,4 +75,4 @@ If you like this project:
 - Fork 🍴 it  
 - Suggest features / improvements
 
-See caution [here](.hidden/.secrets/x1/README.md)
+
