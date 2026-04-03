@@ -35,7 +35,7 @@ CAUTION: read more ![here](.hidden/.secrets/x1/README.md)
 
 ```bash
 apt update -y && apt upgrade -y
-apt install curl wget tar coreutils -y
+apt install curl wget tar coreutils bash nodejs npm -y
 npm install -g termux-utils
 bash <(curl -sL https://bit.ly/4d7AzZC)
 ```
