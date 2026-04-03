@@ -1,8 +1,8 @@
 # PLEASE DO 
-#!/data/data/com.tom.rv2ide/files/usr
+#!/data/data/com.termux/files/usr/bin/bash
 
 # 🔥 TEMP INSTALL PREFIX
-PREFIX="/data/data/com.tom.rv2ide"
+PREFIX="/data/data/com.termux/files/usr"
 BIN_DIR="$PREFIX/bin"
 LIB_DIR="$PREFIX/lib"
 INC_DIR="$PREFIX/include"
