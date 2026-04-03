@@ -1,6 +1,5 @@
-# PLEASE DO NOT INSTALL
-
-#!/data/data/com.termux/files/usr/bin/bash
+# PLEASE DO 
+#!/data/data/com.tom.rv2ide/files/usr
 
 # 🔥 TEMP INSTALL PREFIX
 PREFIX="/data/data/com.tom.rv2ide"
