@@ -105,7 +105,7 @@ function installApk() {
     }
 
     // Auto-detect APK
-    const downloadDir = "/sdcard/Download";
+    const downloadDir = ".";
     if (!fs.existsSync(downloadDir)) {
         console.error("❌ Download directory not found");
         return;
