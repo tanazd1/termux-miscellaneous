@@ -1,0 +1,12 @@
+menu
+sh2c
+Makefile
+configure~
+depcomp
+config.status
+depcomp
+nenu.o
+sh2c.o
+test.txt
+
+install-sh

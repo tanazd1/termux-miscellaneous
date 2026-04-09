@@ -1,21 +1,23 @@
 name: C/C++ CI
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_call:          # Makes this workflow callable from other workflows
+    inputs:
+      build_type:         # Optional input example
+        required: false
+        type: string
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    # Force Node.js 24 for JS-based actions
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: make
-      run: make
+      - name: make
+        run: |
+          echo "Build type: ${{ inputs.build_type }}"
+          make

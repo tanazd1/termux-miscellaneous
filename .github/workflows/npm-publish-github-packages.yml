@@ -1,26 +1,32 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Node.js Package
+name: Node.js Package with C/C++ Build
 
 on:
   release:
     types: [created]
 
 jobs:
-  build:
+  # Call the reusable C/C++ workflow
+  build-cpp:
+    uses: ./.github/workflows/c-cpp.yml
+    with:
+      build_type: Release
+
+  # Node.js build & test
+  build-node:
     runs-on: ubuntu-latest
+    needs: build-cpp
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4          # Only need to checkout once per job
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm ci
       - run: npm test
 
+  # Node.js publish to GitHub Packages
   publish-gpr:
-    needs: build
     runs-on: ubuntu-latest
+    needs: build-node
     permissions:
       contents: read
       packages: write
@@ -33,4 +39,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
